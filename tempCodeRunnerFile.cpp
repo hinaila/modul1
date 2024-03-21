@@ -1,28 +1,12 @@
-#include <iostream>
-using namespace std;
-//Main program
-int main()
-{
-    char op;
-    float num1, num2;
-    cout<<"Masukkan Operator:";
-    cin>>op;
-    cout<<"\nMasukkan Bilangan ke-1 dan ke-2:";
-    cin>>num1>>num2;
+# Definisikan fungsi untuk menggandakan nilai
+def double(x):
+    return x * 2
 
-    switch(op)
-    {
-        case '+':
-            cout<< num1 + num2;
-            break;
-        case '-':
-            cout<< num1 - num2;
-        case '*':
-            cout<< num1 * num2;
-        case '/':
-            cout<< num1 / num2;
-        default:
-            cout<< "Error! operator is not correct";
-    } 
-return 0;
-}
+# Buat list awal
+numbers = [1, 2, 3, 4, 5]
+
+# Gunakan fungsi map untuk menggandakan setiap elemen dalam list
+doubled_numbers = list(map(double, numbers))
+
+# Cetak hasilnya
+print(doubled_numbers)
